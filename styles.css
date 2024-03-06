@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+  --darker-green: #081B1C;
+  --dark-green: #0D2E30;
+  --light-green: #09A16B;
+  --lighter-green: #C2DADC;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, var(--dark-green), var(--darker-green), #111111);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ------------------------- NAVIGATION BAR ---------------------- */
+
+nav{
+  color: #fff;
+  list-style: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  margin: 2.5rem 4rem;
+  position: relative;
+}
+
+nav .logo{
+  margin-right: 2rem;
+}
+
+nav li{
+  margin: 0 1rem;
+}
+
+nav li:last-child {
+  display: flex;
+  align-items: center;
+}
+
+nav li:last-child img{
+  margin-right: 8px;
+}
+
+/* ----------------------- HEADERS ---------------------------------- */
+
+.headers{
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  margin: 4rem;
+  position: relative;
+}
+
+.headers h2{
+  color: var(--light-green);
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.headers h1{
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+
+.headers h1 span{
+  font-weight: 800;
+}
+
+/* ---------------------- BUTTONS ------------------------------ */
+
+.buttons {
+  margin: 4rem;
+  display: flex;
+}
+
+.buttons button{
+  border: none;
+  padding: .75rem 1.5rem;
+  border-radius: 1.5rem; 
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.buttons button img{
+  margin-right: 8px;
+}
+
+.buttons button:nth-child(1){
+  background: var(--light-green);
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.buttons button:nth-child(2){
+  background: #fff;
+  color: var(--dark-green);
+}
+
+/* -------------------- PRODUCTS ---------------------------- */
+.products {
+  margin: 4rem;
+}
+
+.products img{
+  width: 200px;
+}
+
+/* ------------------------- HERO IMAGE ------------------------ */
+.hero-img{
+  position: absolute;
+  z-index: 10;
+  left: 62%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 350px;
+}
+
+
+/* -----------------------------SIDE BACKGROUND --------------------- */
+.side-background{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25vw;
+  height: 100vh;
+  background: var(--light-green);
+  border-radius: 5rem 0 0 5rem;
+}
+
+.side-background .side-text{
+  transform: rotate(-90deg) translate(-100%, 23%);
+}
+
+.side-background h1{
+  font-family: "Mulish", sans-serif;
+  font-size: 6rem;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.side-background h1:nth-child(1){
+  color: transparent;
+  font-family: "Mulish", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.side-background h1:nth-child(2){
+  color: #fff;
+}
+
+.side-background img{
+  position: absolute;
+  z-index: 100;
+}
+
+.side-background .like{
+  top: 42%;
+  left: 75px;
+  width: 100px;
+}
+
+.side-background .bean{
+  top: 50%;
+  left: -111px;
+}
+
+/* ------------------------ ITERATION 2 --------------------- */
+.iteration2 {
+  display: none;
+}
+
+
+.iteration2 .headers{
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  margin: 4rem;
+  position: relative;
+}
+
+.iteration2 .headers h2{
+  color: var(--dark-green);
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.iteration2 .headers h1{
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+
+.iteration2 .headers h1 span{
+  font-weight: 800;
+}
+
+/* ---------------------- BUTTONS ------------------------------ */
+
+.iteration2 .buttons {
+  margin: 4rem;
+  display: flex;
+}
+
+.iteration2 .buttons button{
+  border: none;
+  padding: .75rem 1.5rem;
+  border-radius: 1.5rem; 
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.iteration2 .buttons button img{
+  margin-right: 8px;
+}
+
+.iteration2 .buttons button:nth-child(1){
+  background: var(--dark-green);
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.iteration2 .buttons button:nth-child(2){
+  background: #fff;
+  color: var(--dark-green);
+}
+
+/* -------------------- PRODUCTS ---------------------------- */
+.iteration2 .products {
+  margin: 4rem;
+}
+
+.iteration2 .products img{
+  width: 200px;
+}
