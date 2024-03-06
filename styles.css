@@ -22,6 +22,24 @@ html, body{
 }
 
 /* ------------------------- NAVIGATION BAR ---------------------- */
+.show{
+  display: block;
+}
+
+.error{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+  font-size: 24px;
+
+  justify-content: center;
+  align-items: center;
+  
+  color: #fff;
+  background: radial-gradient(circle, var(--dark-green), var(--darker-green), #111111);
+}
+
 
 nav{
   color: #fff;
@@ -253,4 +271,17 @@ nav li:last-child img{
 
 .iteration2 .products img{
   width: 200px;
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .show{
+    display: none;
+  }
+  
+  .error{
+    display: flex;
+  }
 }
